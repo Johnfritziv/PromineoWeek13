@@ -1,0 +1,94 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Left default stuff in, don't wanna touch anything there. */
+/* Loginform stuff */
+
+.login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* Keeps the form itself in the middle */
+
+.card {
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  width: 300px;
+}
+/* Using the shadow to show the border */
+
+.card form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Put a border on everything */
+.card input, .card button {
+  border-radius: 4px;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.card h3 {
+  border-radius: 4px;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Navbar stuff */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  padding: 10px 0;
+}
+/* Takes the contents of the navbar and distributes evenly spaced across the top */
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
